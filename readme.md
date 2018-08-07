@@ -1,4 +1,6 @@
-# get ip address country from wipmania api
+# #wipmaniaGetIPAdressCountry()
+
+Get the country of origin for an IP address from [Wipmania's API](http://wipmania.com).
 
 ## Requirements
 
