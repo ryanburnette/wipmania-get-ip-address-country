@@ -1,13 +1,11 @@
 ;(function() {
   function wipmaniaGetIPAdressCountry(ipAddress,requestingDomain) {
-    return new Promise(function (resolve) {
-      fetch('http://api.wipmania.com/'+ipAddress+'?'+requestingDomain,{})
-      .then(function (res) {
-        resolve(res.text());
-      })
-      .catch(function (e) {
-        resolve(e);
-      });
+    return fetch('http://api.wipmania.com/'+ipAddress+'?'+requestingDomain,{})
+    .then(function (res) {
+      return res.text();
+    })
+    .catch(function (e) {
+      return e;
     });
   }
   
